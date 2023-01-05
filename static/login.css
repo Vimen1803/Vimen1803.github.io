@@ -1,0 +1,147 @@
+            /*GENERAL*/
+*{
+    padding: 0;
+    margin: 0;
+}
+            /*IMG FONDO*/
+.background img {
+    height: 100vh;
+    width: 100%;
+}
+            /*TAMAÑO GENERAL*/
+body{
+    font-family: sans-serif;
+    font-size: medium;
+    height: 100vh;
+}
+            /*FORMULARIO GENERAL*/
+.form {
+    width: 320px;
+    height: 400px;
+    background-color: black;
+    color: white;
+    margin-left: 40%;
+    margin-top: -43%;
+    border-radius: 10%;
+    position: absolute;
+}
+            /*LOGO*/
+.form img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    align-items: center;
+    margin-top: -15%;
+    margin-left: 33%;
+}
+            /*TITULO REGISTRO*/
+.form h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+            /*TITULO INPUT*/
+.form label{
+    color: white;
+    margin-left: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: none;
+}
+            /*CUADRADO INPUT*/
+.form input {
+    color: black;
+    background-color: white;
+    border: 10cm;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 5px;
+    width: 80%;
+    height: 25px;
+}
+
+.contra a{
+    text-decoration: none;
+    color: blue;
+    padding-bottom: 6px;
+    margin-top: 6px;
+    margin-left: 20px;
+    text-align: center;
+    display: flex;
+}
+.contra a:hover{
+    color: lightblue;
+}
+
+            /*AVISOS GMAIL NAME PASS*/
+.warnings{
+    width: 230px;
+    text-align: left;                
+    margin: 0px 20px;                
+    color: white;                
+    padding-top: 2px;                                
+}
+            /*SIGUINTE*/
+.regist{
+    font-family: 'roboto';
+    background: #4568DC;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #B06AB3, #4568DC);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none;
+    display: block;
+    width: 80%;
+    margin: 5px 20px;
+    color: #fff;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;                                
+}
+            /*OJO PASS*/
+.ojo{
+    color: black;
+    background-color: white;
+    margin-left: -50px;
+    border: none;
+}
+
+@media (max-width: 1230px) {
+    .form{
+        margin-top: -700px;
+    }
+}
+
+@media (max-width: 800px) {
+    .form{
+        margin-left: 250px;
+    }
+}
+
+@media (max-width: 700px) {
+    .form{
+        margin-left: 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    .form{
+        margin-left: 150px;
+    }
+}   
+
+@media (max-width: 550px) {
+    .form{
+        margin-left: 100px;
+    }
+} 
+@media (max-width: 450px) {
+    .form{
+        margin-left: 50px;
+    }
+}  

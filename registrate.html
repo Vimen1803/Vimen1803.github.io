@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V | Register | Vimen Shop</title>
+    <link rel="stylesheet" href="static/registrate.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background">
+        <img src="static/img/bg.jpg">
+    </div>
+    
+    <form action="/ver_datos" method="POST" id="form">
+        <div class="form">
+            <img src="static/img/pfp new.jpg">
+            <h1>REGISTRATE</h1>
+            <div class="grupo">
+                <label for="username">Username</label>
+                <input type="text"placeholder="  Enter Username" name="username" id="username">
+            </div>
+               
+            <div class="grupo">
+                <label for="email">Email</label>
+                <input type="email"placeholder="  Enter E-Mail" name="email" id="email">
+            </div>
+               
+            <div class="grupo">
+                <label for="password">Contraseña</label>
+                <input type="password" placeholder=" Enter Password" name="password" id="password">
+            </div>
+            
+            <button class="regist">Registrate</button>
+            
+            <div class="contra">
+                <a href="login.html">Ya tienes una cuenta? Inicia sesion.</a>
+            </div>
+            <p class="warnings" id="warnings"></p>    
+        </div>           
+    </form>
+    
+    <script src="static/js/main.js"></script>
+</body>
+</html>

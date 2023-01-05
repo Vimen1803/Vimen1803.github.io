@@ -1,0 +1,287 @@
+.body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    width: 100%;
+}
+
+.horizontal-menu{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 60px;
+    position: sticky;
+    top: 0;
+}
+
+.horizontal-menu .mobile{
+    display: none;
+}
+
+.horizontal-menu .logo img{
+    width: 150px;
+    height: 60px;
+    background-size: cover;
+}
+
+.horizontal-menu .logo{
+    margin-left: 10px;
+}
+
+.horizontal-menu a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 20px 25px;
+}
+
+.horizontal-menu a:hover{
+    cursor: pointer;
+    background-color: gray;
+    text-decoration: underline;
+    color: lightblue;
+}
+
+.horizontal-menu .desktop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.horizontal-menu .desktop .medio,
+.horizontal-menu .desktop .derecha{
+    display: flex;
+}
+
+.horizontal-menu .desktop .derecha.mini{
+    display: none;
+}
+
+.inventario{
+    width: 100%;
+}
+
+.inventario .tarjetas{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    margin-left: 50px;
+}
+
+.inventario .tarjetas .tarjeta{
+    width: 400px;
+    height: 600px;
+    background-color: black;
+    display: block;
+    border: 4px solid yellow;
+    margin-right: 30px;
+    margin-bottom: 50px;
+}
+
+.inventario .tarjetas .tarjeta .head h2{
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+}
+
+.inventario .tarjetas .tarjeta .cuerpo img{
+    width: 350px;
+    height: 400px;
+}
+
+.inventario .tarjetas .tarjeta .cuerpo{
+   display: block;
+   text-align: center;
+}
+
+.inventario .tarjetas .tarjeta .cuerpo p{
+    color: white;
+}
+
+.inventario .tarjetas .tarjeta .pie{
+    display: block;
+}
+
+.inventario .tarjetas .tarjeta .pie .data{
+    color: white;
+    display: flex;
+    margin-top: -38px;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.inventario .tarjetas .tarjeta .pie .colores a{
+    padding: 15px;
+}
+
+.inventario .tarjetas .tarjeta .pie .colores{
+    margin-top: 5px;
+    display: flex;
+    margin-left: 5px;
+}
+
+.inventario .tarjetas .tarjeta .pie .colores img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 4px solid gray;
+}
+
+.inventario .tarjetas .tarjeta .pie .compra{
+    margin-left: 30%;
+    margin-top: -25px;
+}
+
+.inventario .tarjetas .tarjeta .pie .compra button{
+    display: block;
+    text-transform: uppercase;
+    width: 150px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: pink;
+    border: 2px solid purple;
+}
+
+.inventario .tarjetas .tarjeta .pie .compra a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.inventario .tarjetas .tarjeta .pie .compra button:hover{
+    background-color: aqua;
+    font-weight: bold;
+    border: 3px solid purple;
+}
+
+@media (max-width: 900px) {
+    .horizontal-menu .logo img{
+        width: 140px;
+        background-size: cover;
+    }
+
+    .horizontal-menu .logo{
+        margin-left: 7px;
+    }
+
+    .horizontal-menu .derecha.full{
+        display: none;
+    }
+
+    .horizontal-menu .derecha.mini{
+        display: block !important;
+    }
+
+    .horizontal-menu .derecha.mini .submenu{
+        position: absolute;
+        display: none;
+        background-color: black;
+        width: 200px;
+        right: 0;
+    }
+
+    .horizontal-menu .derecha.mini:hover .submenu {
+        display: block;
+    }
+}
+
+@media (max-width: 615px){
+    .horizontal-menu{
+        font-size: 14px;
+    }
+
+    .horizontal-menu .logo img{
+        width: 100px;
+        background-size: cover;
+    }
+
+    .horizontal-menu .logo{
+        margin-left: 4px;
+    }
+
+    .horizontal-menu .derecha.mini .submenu{
+        position: absolute;
+        display: none;
+        background-color: black;
+        width: 175px;
+        right: 0;
+    }
+
+    .inventario{
+        display: none;
+    }
+}
+
+@media (max-width: 534px){
+    .horizontal-menu{
+        font-size: 20px;
+    }
+
+    .horizontal-menu .logo img{
+        width: 410px;
+        background-size: cover;
+    }
+
+    .horizontal-menu .logo{
+        margin-left: 35px;
+    }
+
+    .horizontal-menu .desktop{
+        display: none;
+    }
+
+    .horizontal-menu .mobile{
+        display: block;
+    }
+
+    .horizontal-menu .header .more{
+        display: none;
+    }
+
+    .horizontal-menu .mobile .links{
+        background-color: black;
+        text-align: center;
+    }
+
+    .horizontal-menu .mobile .header{
+        display: flex;
+        justify-content: space-between;
+    }
+}  
+
+@media (max-width: 490px){
+    .horizontal-menu .logo img{
+        width: 350px;
+        background-size: cover;
+    }
+
+    .horizontal-menu .logo{
+        margin-left: 25px;
+    }
+}
+
+@media (max-width: 420px){
+    .horizontal-menu .logo img{
+        width: 300px;
+        background-size: cover;
+    }
+
+    .horizontal-menu .logo{
+        margin-left: 25px;
+    }
+}
+
+@media (max-width: 370px){
+    .horizontal-menu .logo img{
+        width: 230px;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 300px){
+    .horizontal-menu .logo img{
+        width: 150px;
+        background-size: cover;
+    }
+}

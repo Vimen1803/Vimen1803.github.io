@@ -1,0 +1,262 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+nav .primary,
+nav .secondary{
+    display: none;
+}
+
+nav{
+    width: 100%;
+    display: block;
+}
+
+nav .header{
+    background-color: cyan;
+    padding: 5px;   
+    margin-top: 0px;
+    border-bottom: solid black;
+}
+
+nav .header .title{
+    text-align: center;
+}
+
+nav .equipoh2{
+    margin-top: 50px;
+    text-align: center;
+}
+
+nav .equipo{
+    display: flex;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+nav .tarjeta{
+    width: 400px;
+    height: 250px;
+    background-color: darkgoldenrod;
+    margin-right: 70px;
+    border-radius: 15%;
+}
+
+nav .tarjeta .head{
+    display: block;
+}
+
+nav .tarjeta .head .name{
+    text-align: center;
+    font-size: 22px;
+    text-decoration: underline;
+}
+
+nav .tarjeta .cuerpo{
+    display: flex;
+}
+
+nav .tarjeta .cuerpo img{
+    width: 62px;
+    height: 62px;
+    margin-left: 25px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: white;
+}
+
+nav .tarjeta .cuerpo .especialidad{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+nav .tarjeta .contact{
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+}
+
+nav .tarjeta .pie{
+    text-align: center;
+    margin-top: -10px;
+}
+
+nav .tarjeta .pie a{
+    text-decoration: none;
+    color: black;
+}
+
+nav .valores{
+    margin-top: 50px;
+    display: block;
+    text-align: center;
+}
+
+nav .contactanos{
+    margin-top: 60px;
+    display: block;
+    text-align: center;
+}
+
+nav .contactanos .links{
+    margin-top: 30px;
+}
+
+nav .contactanos .links a{
+    text-decoration: none;
+    color: black;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+@media (max-width: 1480px) {
+    nav .tarjeta .contact{
+        margin-top: -18px;
+    }
+}
+
+@media (max-width: 1189px) {
+    nav .equipo{
+        display: none;
+    }
+
+    nav .secondary,
+    nav .primary{
+        display: flex;
+        margin-left: 140px;
+        padding: 20px;
+    }
+
+    nav .tarjeta .contact{
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 890px){
+    nav .tarjeta .contact{
+        margin-top: -25px;
+    }
+
+    nav .tarjeta .cuerpo .especialidad{
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: -8px;
+    }
+}
+
+@media (max-width: 890px){
+    nav .secondary,
+    nav .primary{
+        margin-left: 100px;
+        padding: 12px;
+    }
+
+    nav .tarjeta .cuerpo .especialidad{
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 0;
+    }
+
+    nav .tarjeta .contact{
+        margin-top: -5px;
+    }
+}
+
+@media (max-width: 695px){
+    nav .secondary,
+    nav .primary{
+        margin-left: 50px;
+        padding: 10px;
+    }
+
+    nav .tarjeta .cuerpo .especialidad{
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: -8px;
+    }
+}
+
+@media (max-width: 630px){
+    nav .secondary,
+    nav .primary{
+        padding: 5px;
+    }
+
+    nav .tarjeta .contact{
+        margin-top: -15px;
+    }
+}
+
+@media (max-width: 611px){
+    nav .secondary,
+    nav .primary{
+        display: none;
+    }
+
+    nav .equipo{
+        display: block;
+        margin-left: 80px;
+    }
+
+    nav .tarjeta{
+        height: 200px;
+    }
+
+    nav .equipo .tarjeta .cuerpo .especialidad{
+        margin-top: 15px;
+    }
+
+    nav .valores p{
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    nav .contactanos p{
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    nav .equipoh2{
+        margin-top: 15px;
+        margin-bottom: -15px;
+    }
+
+    nav .equipo .tarjeta .head h3{
+        padding: 10px;
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 530px){
+    nav .equipo{
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 470px){
+    nav .equipo{
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 430px){
+    nav .tarjeta{
+        width: 350px;
+    }
+}
+
+@media (max-width: 390px){
+    nav .tarjeta{
+        width: 300px;
+    }
+}
+
+@media (max-width: 340px){
+    nav .equipo{
+        margin: 0;
+    }
+}

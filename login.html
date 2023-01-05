@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V | LogIn | Vimen Shop</title>
+    <link rel="stylesheet" href="static/login.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background">
+        <img src="static/img/bg.jpg">
+    </div>
+    
+    <form action="" method="POST" id="form">
+        <div class="form">
+            <img src="static/img/pfp new.jpg">
+            <h1>Inicia Sesión</h1>
+
+            <div class="grupo">
+                <label for="email">Email</label>
+                <input type="text"placeholder="  Enter Email" name="" id="email">
+            </div>
+
+            <div class="grupo">
+                <label for="pass">Contraseña</label>
+                <input type="password" placeholder=" Enter Password" name="pass" id="pass">
+            </div>
+            
+           <button class="regist" onclick="window.location='index.html'">Inicia Sesión</button>
+            
+            <div class="contra">
+                <a href="registrate.html">¿No tienes una cuenta? Registrate.</a>
+                <a href="Password.html">¿Has olvidado tu contraseña?</a>
+            </div>
+            <p class="warnings" id="warnings"></p>    
+        </div>           
+    </form>
+</body>
+    <script src="static/js/main.js"></script>
+</html>
